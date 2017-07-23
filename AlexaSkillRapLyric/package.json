@@ -1,0 +1,14 @@
+{
+  "name": "alexaraplyrics",
+  "version": "1.0.0",
+  "description": "simplealexaskill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "parkerlowrey",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.11"
+  }
+}
