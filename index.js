@@ -1,4 +1,4 @@
-const alexa = require("alexa-sdk");
+const Alexa = require("alexa-sdk");
 
 
 const data = {
@@ -22,7 +22,7 @@ function pickRandomArtist(data) {
   let count = 0;
   for (let rapper in data) {
     if (Math.random()<1/++count) {
-      result = rapper;
+      results = rapper;
     }
   }
   return results;
@@ -58,7 +58,7 @@ const handlers = {
 
 exports.handler = function(event, context, callback) {
   const alexa = Alexa.handler(event, context);
-  alexa.appId = "amzn1.ask.skill.522f9279-6359-4ea6-a027-b14680748b80";
+  alexa.appId = "";
   alexa.registerHandlers(handlers);
   alexa.execute();
 };
